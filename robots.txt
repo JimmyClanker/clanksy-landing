@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://clanksy.ai/sitemap.xml

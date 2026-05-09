@@ -1,0 +1,14 @@
+# Clanksy
+
+> Clanksy is an AI workflow automation assistant for beauty salons in Italy and Spain. It helps salons manage WhatsApp, phone calls, appointments, customer memory, review replies, offers, social drafts, and weekly reporting with human approval for sensitive outbound actions.
+
+## Public Pages
+
+- [Italian landing](https://clanksy.ai/) - Main Clanksy landing page in Italian.
+- [Spanish landing](https://clanksy.ai/es) - Clanksy landing page in Spanish.
+- [English landing](https://clanksy.ai/en) - Clanksy landing page in English.
+- [Privacy information](https://clanksy.ai/privacy) - Privacy information for demo requests.
+
+## Contact
+
+- Email: hello@clanksy.ai
