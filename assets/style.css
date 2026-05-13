@@ -25,7 +25,7 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
   font-feature-settings: "ss01", "cv11";
   -webkit-font-smoothing: antialiased;
   color: var(--c-text);
@@ -57,7 +57,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .logo {
   display: flex; align-items: center; gap: 10px;
   font-size: 20px; font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
 }
 .logo-mark {
   width: 32px; height: 32px;
@@ -137,7 +137,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 56px;
   font-weight: 700;
   line-height: 1.05;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   color: var(--c-text);
   margin-bottom: 18px;
 }
@@ -290,7 +290,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .section-title {
   font-size: 36px;
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   margin-bottom: 12px;
 }
 @media (max-width: 860px) { .section-title { font-size: 28px; } }
@@ -555,7 +555,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 8px;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 .form-card p {
   font-size: 14px; color: var(--c-text-soft);
@@ -641,7 +641,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 .legal-copy h1 {
   font-size: 44px;
   line-height: 1.08;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   margin-bottom: 18px;
 }
 .legal-copy .hero-sub {
@@ -796,7 +796,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   .section-title {
     font-size: 29px;
     line-height: 1.14;
-    letter-spacing: -0.01em;
+    letter-spacing: 0;
   }
 
   .section-sub {
