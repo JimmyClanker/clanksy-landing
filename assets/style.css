@@ -118,6 +118,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   gap: 60px;
   align-items: center;
 }
+.hero-grid > * {
+  min-width: 0;
+}
 @media (max-width: 860px) {
   .hero-grid { grid-template-columns: 1fr; gap: 40px; }
 }
@@ -186,6 +189,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .hero-illu {
   position: relative;
+  min-width: 0;
+  width: 100%;
 }
 .hero-card {
   background: var(--c-card);
@@ -195,6 +200,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     0 0 0 1px var(--c-border-soft),
     0 30px 60px -25px rgba(74, 93, 79, 0.30);
   transform: rotate(-1.2deg);
+  max-width: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 .chat-head {
   display: flex;
@@ -264,6 +272,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   border-radius: 16px;
   font-size: 14px;
   line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 .chat-bubble.in .msg {
   background: var(--c-bg-soft);
@@ -717,11 +726,7 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   }
 
   .nav-cta {
-    padding: 8px 11px;
-    max-width: 96px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
   }
 
   .hero {
@@ -777,6 +782,10 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
     padding: 18px;
     border-radius: 15px;
     transform: none;
+  }
+
+  .hero-illu {
+    overflow: hidden;
   }
 
   .chat-bubble .msg {

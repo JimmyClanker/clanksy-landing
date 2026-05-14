@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#fbf8f1"/>
+  <g transform="translate(400,400)" text-anchor="middle">
+    <g transform="translate(0,-110)">
+      <circle r="32" fill="none" stroke="#c79c9c" stroke-width="1.5"/>
+      <g stroke="#7a8d7e" stroke-width="1.5">
+        <line x1="0" y1="-48" x2="0" y2="-58"/>
+        <line x1="0" y1="48" x2="0" y2="58"/>
+        <line x1="-48" y1="0" x2="-58" y2="0"/>
+        <line x1="48" y1="0" x2="58" y2="0"/>
+        <line x1="-34" y1="-34" x2="-41" y2="-41"/>
+        <line x1="34" y1="-34" x2="41" y2="-41"/>
+        <line x1="-34" y1="34" x2="-41" y2="41"/>
+        <line x1="34" y1="34" x2="41" y2="41"/>
+      </g>
+    </g>
+    <text y="20" font-size="100" font-family="Georgia, 'Times New Roman', serif" font-weight="300" letter-spacing="20" fill="#4a5d4f">AURORA</text>
+    <line x1="-90" y1="60" x2="90" y2="60" stroke="#c79c9c" stroke-width="1"/>
+    <text y="110" font-size="22" font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#7a8d7e">studio · valencia</text>
+  </g>
+</svg>

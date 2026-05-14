@@ -3,17 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Clanksy · L'assistente digitale per saloni beauty</title>
-<meta name="description" content="L'assistente AI che risponde su WhatsApp e al telefono, prende prenotazioni, ricorda le tue clienti e ti propone offerte mirate. Per saloni beauty in Spagna e Italia.">
-<meta property="og:title" content="Clanksy · L'assistente digitale per saloni beauty">
-<meta property="og:description" content="WhatsApp + telefono + marketing intelligente, in un'unica soluzione. Lavori in salone, lei tiene il filo con le tue clienti 24 ore su 24.">
+<title>Clanksy · Il cervello operativo del tuo salone</title>
+<meta name="description" content="Un'unica app mobile che risponde su WhatsApp e al telefono, ricorda ogni cliente, genera post Instagram e ti dà il report settimanale. €99/mese flat. Per saloni beauty in Spagna.">
+<meta property="og:title" content="Clanksy · Il cervello operativo del tuo salone">
+<meta property="og:description" content="Una sola app, un solo cervello. WhatsApp + telefono + Instagram + recensioni gestiti dalla stessa intelligenza. €99/mese flat, niente setup.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://clanksy.ai/">
 <link rel="alternate" hreflang="it" href="https://clanksy.ai/">
 <link rel="alternate" hreflang="es" href="https://clanksy.ai/es">
 <link rel="alternate" hreflang="en" href="https://clanksy.ai/en">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234a5d4f'/%3E%3Ctext x='50' y='68' text-anchor='middle' fill='%23f6f1e8' font-family='system-ui' font-size='62' font-weight='800'%3EC%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css?v=20260509-mobile2">
+<link rel="stylesheet" href="assets/style.css?v=20260514-mobile3">
+<style>
+/* Infografiche inline — fix dimensione + spaziatura */
+.infographic { width: 100%; max-width: 720px; margin: 32px auto 0; display: block; }
+.infographic-wide { max-width: 880px; }
+.infographic-small { max-width: 560px; }
+.pricing-card {
+  background: var(--c-card); border: 1px solid var(--c-border);
+  border-radius: 16px; padding: 32px 28px; text-align: center;
+  max-width: 460px; margin: 24px auto 0; box-shadow: 0 4px 20px rgba(74,93,79,0.08);
+}
+.pricing-price {
+  font-size: 56px; font-weight: 800; color: var(--c-accent-strong);
+  letter-spacing: -2px; line-height: 1;
+}
+.pricing-price .unit {
+  font-size: 18px; font-weight: 500; color: var(--c-text-soft);
+  letter-spacing: 0; margin-left: 4px;
+}
+.pricing-tagline { font-size: 14px; color: var(--c-text-soft); margin-top: 8px; }
+.pricing-includes { list-style: none; margin-top: 24px; text-align: left; }
+.pricing-includes li { padding: 6px 0; font-size: 15px; color: var(--c-text); }
+.pricing-includes li:before { content: "✓"; color: var(--c-accent); font-weight: 700; margin-right: 10px; }
+.feature-group-title {
+  font-size: 13px; font-weight: 600; color: var(--c-accent-strong);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin: 40px 0 16px; text-align: center;
+}
+.feature-group-title:first-of-type { margin-top: 0; }
+</style>
 </head>
 <body>
 
@@ -27,7 +56,8 @@
     <nav class="nav-links">
       <a href="#cosa-fa">Cosa fa</a>
       <a href="#come-funziona">Come funziona</a>
-      <a href="#perche">Perché Clanksy</a>
+      <a href="#app">L'app</a>
+      <a href="#prezzo">Prezzo</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div style="display:flex;gap:14px;align-items:center;">
@@ -36,7 +66,7 @@
         <a href="/es">ES</a>
         <a href="/en">EN</a>
       </div>
-      <a href="#demo" class="nav-cta">Prenota demo</a>
+      <a href="#demo" class="nav-cta">Prova gratis</a>
     </div>
   </div>
 </header>
@@ -47,17 +77,20 @@
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <span class="eyebrow">Per saloni beauty · Spagna e Italia</span>
-      <h1 class="h1">L'assistente digitale che <em>risponde, prenota e ricorda</em> le tue clienti.</h1>
+      <span class="eyebrow">Per saloni beauty · Spagna</span>
+      <h1 class="h1">Il <em>cervello operativo</em> del tuo salone. Tutto in un'app.</h1>
       <p class="lead">
-        WhatsApp e telefono, gestiti 24 ore su 24. Tu lavori in salone con calma, lei
-        tiene il filo con le clienti, conferma gli appuntamenti, e ti notifica solo
-        quando serve davvero.
+        Una sola intelligenza che risponde su WhatsApp e al telefono, ricorda
+        ogni cliente, crea i post Instagram, gestisce le recensioni. Tu controlli
+        tutto dal tuo telefono, con un tap.
       </p>
       <div class="btn-row">
-        <a href="#demo" class="btn btn-primary">Prenota una demo di 15 minuti</a>
-        <a href="#cosa-fa" class="btn btn-secondary">Scopri come funziona</a>
+        <a href="#demo" class="btn btn-primary">Prova gratis 14 giorni</a>
+        <a href="#cosa-fa" class="btn btn-secondary">Scopri cosa fa</a>
       </div>
+      <p style="margin-top:18px;font-size:13px;color:var(--c-text-muted);">
+        €99/mese flat · Niente setup · Disdici quando vuoi
+      </p>
     </div>
     <div class="hero-illu">
       <div class="hero-card">
@@ -98,177 +131,525 @@
   <div class="wrap">
     <div class="section-header">
       <div class="section-eyebrow">Il problema</div>
-      <h2 class="section-title">Il telefono e WhatsApp ti rubano tempo che dovresti dare alle clienti in salone</h2>
+      <h2 class="section-title">Tre tool diversi che non si parlano, e tu nel mezzo</h2>
+      <p class="section-sub">
+        Risponderai mai a tutti i messaggi delle 22? Riuscirai a creare 3 post a settimana?
+        A ricordarti che Sofia non torna da 45 giorni? Il punto non è fare tutto, è avere
+        un'unica intelligenza che lo fa per te.
+      </p>
     </div>
     <div class="problem-grid">
       <div class="problem-card">
         <div class="problem-icon">🌙</div>
-        <h3 class="problem-title">Le clienti scrivono di sera</h3>
-        <p class="problem-desc">Maria ti scrive alle 22:30 mentre sei a cena in famiglia. Tu rispondi il mattino dopo, ma intanto Maria ha prenotato altrove.</p>
+        <h3 class="problem-title">Messaggi fuori orario</h3>
+        <p class="problem-desc">Maria scrive alle 22:30, tu rispondi il mattino dopo, ma intanto ha prenotato altrove. Il telefono squilla mentre stai facendo un colore.</p>
       </div>
       <div class="problem-card">
-        <div class="problem-icon">📞</div>
-        <h3 class="problem-title">Il telefono squilla mentre lavori</h3>
-        <p class="problem-desc">Sei concentrata su un colore complicato e il telefono suona tre volte. La cliente al telefono prova un altro salone.</p>
+        <div class="problem-icon">📸</div>
+        <h3 class="problem-title">Marketing che non hai tempo di fare</h3>
+        <p class="problem-desc">Sai che i post Instagram aiutano. Ma generare contenuti settimanali è un secondo lavoro. E ogni recensione richiede una risposta studiata.</p>
       </div>
       <div class="problem-card">
         <div class="problem-icon">💔</div>
-        <h3 class="problem-title">Le clienti scivolano via</h3>
-        <p class="problem-desc">Sofia non torna da 45 giorni, di solito veniva ogni 4 settimane. Senza dati, te ne accorgi quando è troppo tardi.</p>
+        <h3 class="problem-title">Clienti che scivolano via</h3>
+        <p class="problem-desc">Sofia veniva ogni 4 settimane, sono passati 45 giorni. Tu non te ne accorgi finché non incontri sua cugina che dice "ah no, va da un'altra parte adesso".</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====================== COSA FA ====================== -->
+<!-- ====================== COSA FA — 12 capability con infografica capability bundle ====================== -->
 <section class="section" id="cosa-fa">
   <div class="wrap">
     <div class="section-header">
       <div class="section-eyebrow">La soluzione</div>
-      <h2 class="section-title">Otto cose che Clanksy fa per te ogni giorno</h2>
-      <p class="section-sub">Una sola assistente, tutto integrato. Niente da imparare, niente da configurare ogni settimana.</p>
+      <h2 class="section-title">Un solo cervello, dodici funzioni</h2>
+      <p class="section-sub">
+        Tutto quello che serve a un salone moderno per attrarre, accogliere e ricordare i clienti.
+        Una sola assistente integrata, non dodici tool separati.
+      </p>
     </div>
+
+    <!-- Infografica 1 — Capability bundle -->
+    <svg class="infographic infographic-wide" viewBox="0 0 880 460" role="img" aria-labelledby="info1-title info1-desc" xmlns="http://www.w3.org/2000/svg">
+      <title id="info1-title">Capability bundle Clanksy</title>
+      <desc id="info1-desc">Un cervello centrale collegato a dodici funzioni raggruppate in tre aree: Accoglienza, Marketing, Memoria.</desc>
+      <defs>
+        <linearGradient id="brainGrad" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#7a8d7e"/>
+          <stop offset="100%" stop-color="#4a5d4f"/>
+        </linearGradient>
+        <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+          <feOffset dx="0" dy="2"/>
+          <feComponentTransfer><feFuncA type="linear" slope="0.15"/></feComponentTransfer>
+          <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <!-- Background circles for groups -->
+      <ellipse cx="150" cy="230" rx="125" ry="170" fill="#e2e8df" opacity="0.5"/>
+      <ellipse cx="440" cy="80" rx="195" ry="55" fill="#f0e3c9" opacity="0.5"/>
+      <ellipse cx="730" cy="230" rx="125" ry="170" fill="#e2e8df" opacity="0.5"/>
+
+      <!-- Group labels -->
+      <text x="150" y="55" text-anchor="middle" fill="#4a5d4f" font-family="system-ui" font-size="13" font-weight="700" letter-spacing="1.5">ACCOGLIENZA</text>
+      <text x="440" y="22" text-anchor="middle" fill="#a67a30" font-family="system-ui" font-size="13" font-weight="700" letter-spacing="1.5">MARKETING</text>
+      <text x="730" y="55" text-anchor="middle" fill="#4a5d4f" font-family="system-ui" font-size="13" font-weight="700" letter-spacing="1.5">MEMORIA</text>
+
+      <!-- Central brain -->
+      <circle cx="440" cy="230" r="60" fill="url(#brainGrad)" filter="url(#softShadow)"/>
+      <text x="440" y="225" text-anchor="middle" fill="#f6f1e8" font-family="system-ui" font-size="14" font-weight="700">Clanksy</text>
+      <text x="440" y="245" text-anchor="middle" fill="#d4dcd5" font-family="system-ui" font-size="10">UN solo cervello</text>
+
+      <!-- Accoglienza nodes (left) -->
+      <g font-family="system-ui" font-size="12" fill="#2a2520">
+        <g transform="translate(60, 130)">
+          <rect x="-50" y="-15" width="100" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">WhatsApp 24/7</text>
+        </g>
+        <g transform="translate(60, 195)">
+          <rect x="-50" y="-15" width="100" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Telefono voce</text>
+        </g>
+        <g transform="translate(60, 260)">
+          <rect x="-50" y="-15" width="100" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Prenotazioni</text>
+        </g>
+        <g transform="translate(60, 325)">
+          <rect x="-50" y="-15" width="100" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Multi-lingua</text>
+        </g>
+      </g>
+
+      <!-- Marketing nodes (top) -->
+      <g font-family="system-ui" font-size="12" fill="#2a2520">
+        <g transform="translate(280, 95)">
+          <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Post Instagram</text>
+        </g>
+        <g transform="translate(395, 65)">
+          <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Reel + video AI</text>
+        </g>
+        <g transform="translate(510, 95)">
+          <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Offerte mirate</text>
+        </g>
+        <g transform="translate(620, 130)">
+          <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Risposta review</text>
+        </g>
+      </g>
+
+      <!-- Memoria nodes (right) -->
+      <g font-family="system-ui" font-size="12" fill="#2a2520">
+        <g transform="translate(820, 130)">
+          <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Preferenze cliente</text>
+        </g>
+        <g transform="translate(820, 195)">
+          <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Storico visite</text>
+        </g>
+        <g transform="translate(820, 260)">
+          <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Dormienti alert</text>
+        </g>
+        <g transform="translate(820, 325)">
+          <rect x="-55" y="-15" width="110" height="30" rx="15" fill="#fbf8f1" stroke="#d8cfc1"/>
+          <text text-anchor="middle" dy="4">Report settimanale</text>
+        </g>
+      </g>
+
+      <!-- Connection lines (soft sage) -->
+      <g stroke="#7a8d7e" stroke-width="1.5" opacity="0.5" fill="none">
+        <path d="M 380 230 Q 220 230 110 130"/>
+        <path d="M 380 230 Q 220 220 110 195"/>
+        <path d="M 380 230 Q 220 240 110 260"/>
+        <path d="M 380 230 Q 220 280 110 325"/>
+        <path d="M 425 175 Q 350 130 280 95"/>
+        <path d="M 440 170 Q 420 110 395 65"/>
+        <path d="M 455 175 Q 510 130 510 95"/>
+        <path d="M 480 195 Q 600 130 620 130"/>
+        <path d="M 500 230 Q 660 230 770 130"/>
+        <path d="M 500 230 Q 660 220 770 195"/>
+        <path d="M 500 230 Q 660 240 770 260"/>
+        <path d="M 500 230 Q 660 280 770 325"/>
+      </g>
+    </svg>
+
+    <!-- 12 features in 3 groups -->
+    <div class="feature-group-title">Accoglienza · 24/7</div>
     <div class="feature-grid">
       <div class="feature">
         <div class="feature-icon-box">💬</div>
         <div class="feature-text">
-          <h3>Risponde su WhatsApp 24/7</h3>
-          <p>In italiano, spagnolo, catalano, inglese e francese. Capisce il dialetto se la cliente lo usa. Risponde in 3 secondi.</p>
+          <h3>WhatsApp 24/7</h3>
+          <p>Risponde in 3 secondi, in italiano, spagnolo, catalano, inglese, francese. Tono come l'hai impostato.</p>
         </div>
       </div>
       <div class="feature">
         <div class="feature-icon-box">📞</div>
         <div class="feature-text">
-          <h3>Risponde al telefono</h3>
-          <p>Voce naturale, italiano standard. La cliente parla con lei come con una segretaria. Conferma gli orari liberi al volo.</p>
+          <h3>Telefono voce naturale</h3>
+          <p>La cliente parla con un'assistente. Conferma slot al volo. Niente registrazioni, solo riassunto operativo.</p>
         </div>
       </div>
       <div class="feature">
         <div class="feature-icon-box">📅</div>
         <div class="feature-text">
-          <h3>Prende le prenotazioni</h3>
-          <p>Controlla l'agenda, propone gli slot, conferma data e ora. Tu ricevi solo l'appuntamento già fatto.</p>
+          <h3>Prenotazioni live</h3>
+          <p>Controlla la tua agenda Treatwell o Booksy. Propone gli slot reali, conferma data e ora.</p>
         </div>
       </div>
       <div class="feature">
-        <div class="feature-icon-box">🧠</div>
+        <div class="feature-icon-box">🌍</div>
         <div class="feature-text">
-          <h3>Ricorda ogni cliente</h3>
-          <p>"Maria preferisce Federica, viene ogni 5 settimane, allergica all'eucalipto." Tutto memorizzato, tutto a portata di mano.</p>
+          <h3>Multi-lingua nativa</h3>
+          <p>Detecta la lingua del messaggio e risponde nella stessa. Niente "spanglish" forzato.</p>
         </div>
       </div>
+    </div>
+
+    <div class="feature-group-title">Marketing · da approvare con un tap</div>
+    <div class="feature-grid">
       <div class="feature">
         <div class="feature-icon-box">📸</div>
         <div class="feature-text">
-          <h3>Bozze post Instagram</h3>
-          <p>Ti propone post con immagine, caption e hashtag basati sui servizi più richiesti del momento. Tu approvi o modifichi.</p>
+          <h3>Post Instagram brandizzati</h3>
+          <p>Immagine + caption + hashtag generati con il tuo logo e i tuoi colori. Tu approvi nell'app.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon-box">🎬</div>
+        <div class="feature-text">
+          <h3>Reel e video AI</h3>
+          <p>Video brevi generati automaticamente sui tuoi servizi più richiesti. Pubblicazione diretta con la tua conferma.</p>
         </div>
       </div>
       <div class="feature">
         <div class="feature-icon-box">🎁</div>
         <div class="feature-text">
-          <h3>Riattiva clienti dormienti</h3>
-          <p>Identifica chi non torna da troppo. Ti propone un'offerta personalizzata da inviare. Solo se tu approvi.</p>
+          <h3>Offerte personalizzate</h3>
+          <p>Identifica chi non torna, ti propone un'offerta su misura per quel cliente. Tu mandi solo se ti convince.</p>
         </div>
       </div>
       <div class="feature">
         <div class="feature-icon-box">⭐</div>
         <div class="feature-text">
-          <h3>Risponde alle recensioni</h3>
-          <p>Quando arriva una recensione su Google, prepara la risposta professionale e te la fa vedere prima di pubblicarla.</p>
+          <h3>Risposte recensioni</h3>
+          <p>Prepara la risposta professionale per ogni recensione Google. Tu vedi e pubblichi (o modifichi) nell'app.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-group-title">Memoria · il valore dei tuoi dati</div>
+    <div class="feature-grid">
+      <div class="feature">
+        <div class="feature-icon-box">🧠</div>
+        <div class="feature-text">
+          <h3>Preferenze cliente</h3>
+          <p>"Maria preferisce Federica, allergica all'eucalipto, viene il martedì pomeriggio." Tutto ricordato, sempre.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon-box">📈</div>
+        <div class="feature-text">
+          <h3>Storico visite</h3>
+          <p>Servizi, cadenza, ticket medio per ogni cliente. Pattern e segnali deboli automatici.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon-box">⏰</div>
+        <div class="feature-text">
+          <h3>Alert clienti dormienti</h3>
+          <p>Quando un cliente abituale supera la cadenza tipica, ti avvisa prima che se ne dimentichi.</p>
         </div>
       </div>
       <div class="feature">
         <div class="feature-icon-box">📊</div>
         <div class="feature-text">
-          <h3>Report del lunedì mattina</h3>
-          <p>Un riassunto della settimana via WhatsApp: quante clienti, appuntamenti, picchi, segnali da tenere d'occhio.</p>
+          <h3>Report del lunedì</h3>
+          <p>Riassunto della settimana sull'app: picchi, KPI, segnali da tenere d'occhio. In due minuti capisci tutto.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====================== COME FUNZIONA ====================== -->
-<section class="section section-tinted" id="come-funziona">
+<!-- ====================== APP MOBILE ====================== -->
+<section class="section section-tinted" id="app">
+  <div class="wrap">
+    <div class="section-header">
+      <div class="section-eyebrow">L'app del titolare</div>
+      <h2 class="section-title">Il tuo salone, nella tasca</h2>
+      <p class="section-sub">
+        Dall'app iOS e Android approvi un post, mandi un'offerta, leggi una recensione,
+        rispondi a una cliente. Tutto in due tap. Niente CRM da imparare.
+      </p>
+    </div>
+
+    <div class="how-grid" style="margin-top:32px;">
+      <div class="how-step">
+        <div class="how-num">●</div>
+        <h3>Tutte le approvazioni in un posto</h3>
+        <p>Bozze Instagram, offerte, risposte recensioni: una sola lista, una pila da svuotare quando hai 5 minuti tra una cliente e l'altra.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">●</div>
+        <h3>Chat diretta con l'AI</h3>
+        <p>Le parli normalmente: "spegni i post il fine settimana", "Maria preferisce il pomeriggio". Lei capisce e si ricorda.</p>
+      </div>
+      <div class="how-step">
+        <div class="how-num">●</div>
+        <h3>Notifiche solo quando serve</h3>
+        <p>Push quando un cliente nuovo prenota, quando c'è una recensione, quando il sistema ha un dubbio importante.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== COME FUNZIONA + flow infografica ====================== -->
+<section class="section" id="come-funziona">
   <div class="wrap">
     <div class="section-header">
       <div class="section-eyebrow">Come funziona</div>
-      <h2 class="section-title">In due settimane è già parte della tua giornata</h2>
+      <h2 class="section-title">Dalla prima chat al post pubblicato, tutto in un flusso</h2>
     </div>
-    <div class="how-grid">
+
+    <!-- Infografica 2 — Flow operativo -->
+    <svg class="infographic" viewBox="0 0 720 240" role="img" aria-labelledby="info2-title info2-desc" xmlns="http://www.w3.org/2000/svg">
+      <title id="info2-title">Flusso operativo Clanksy</title>
+      <desc id="info2-desc">Il cliente scrive su WhatsApp, Clanksy capisce e propone uno slot, il cliente conferma, il titolare riceve la notifica nell'app, e l'appuntamento entra in agenda.</desc>
+
+      <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#7a8d7e"/>
+        </marker>
+      </defs>
+
+      <!-- Step 1: Cliente -->
+      <g transform="translate(60, 120)">
+        <circle r="42" fill="#fbf8f1" stroke="#d8cfc1" stroke-width="1.5"/>
+        <text y="-2" text-anchor="middle" font-family="system-ui" font-size="11" fill="#6b5f54">Cliente</text>
+        <text y="14" text-anchor="middle" font-family="system-ui" font-size="22" fill="#2a2520">💬</text>
+        <text y="65" text-anchor="middle" font-family="system-ui" font-size="11" fill="#6b5f54">Scrive su WhatsApp</text>
+      </g>
+
+      <line x1="106" y1="120" x2="186" y2="120" stroke="#7a8d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Step 2: Clanksy capisce -->
+      <g transform="translate(225, 120)">
+        <circle r="42" fill="#4a5d4f"/>
+        <text y="-2" text-anchor="middle" font-family="system-ui" font-size="11" fill="#d4dcd5">Clanksy</text>
+        <text y="16" text-anchor="middle" font-family="system-ui" font-size="22" fill="#f6f1e8">🧠</text>
+        <text y="65" text-anchor="middle" font-family="system-ui" font-size="11" fill="#6b5f54">Capisce e propone</text>
+      </g>
+
+      <line x1="271" y1="120" x2="351" y2="120" stroke="#7a8d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Step 3: Conferma -->
+      <g transform="translate(390, 120)">
+        <circle r="42" fill="#fbf8f1" stroke="#d8cfc1" stroke-width="1.5"/>
+        <text y="-2" text-anchor="middle" font-family="system-ui" font-size="11" fill="#6b5f54">Cliente</text>
+        <text y="14" text-anchor="middle" font-family="system-ui" font-size="22" fill="#2a2520">✓</text>
+        <text y="65" text-anchor="middle" font-family="system-ui" font-size="11" fill="#6b5f54">Conferma slot</text>
+      </g>
+
+      <line x1="436" y1="120" x2="516" y2="120" stroke="#7a8d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Step 4: Agenda + notifica owner -->
+      <g transform="translate(555, 120)">
+        <circle r="42" fill="#c79c5a"/>
+        <text y="-2" text-anchor="middle" font-family="system-ui" font-size="11" fill="#fbf8f1">Tu</text>
+        <text y="16" text-anchor="middle" font-family="system-ui" font-size="22" fill="#fbf8f1">📱</text>
+        <text y="65" text-anchor="middle" font-family="system-ui" font-size="11" fill="#6b5f54">Notifica nell'app</text>
+      </g>
+
+      <line x1="601" y1="120" x2="681" y2="120" stroke="#7a8d7e" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+      <!-- Output: agenda check -->
+      <g transform="translate(700, 120)">
+        <text text-anchor="middle" font-family="system-ui" font-size="22" fill="#4a5d4f">📅</text>
+      </g>
+
+      <!-- Time badge -->
+      <g transform="translate(360, 200)">
+        <rect x="-65" y="-13" width="130" height="26" rx="13" fill="#e2e8df" stroke="#7a8d7e" stroke-width="1"/>
+        <text text-anchor="middle" dy="4" font-family="system-ui" font-size="11" fill="#4a5d4f" font-weight="600">Tutto in 30 secondi</text>
+      </g>
+    </svg>
+
+    <div class="how-grid" style="margin-top:48px;">
       <div class="how-step">
         <div class="how-num">1</div>
         <h3>Setup in 30 minuti</h3>
-        <p>Ti facciamo qualche domanda sul tuo salone, sui servizi, sul tono che preferisci. Da quel momento Clanksy è operativa.</p>
+        <p>Connetti WhatsApp Business, Instagram, Google reviews. Ti facciamo qualche domanda sul tuo salone. Da quel momento Clanksy è operativa.</p>
       </div>
       <div class="how-step">
         <div class="how-num">2</div>
-        <h3>Si adatta a te</h3>
-        <p>Le prime due settimane le approvi le bozze, le dai feedback, le dici cosa cambiare. Lei impara il tuo modo di lavorare.</p>
+        <h3>14 giorni di prova guidata</h3>
+        <p>Le prime due settimane approvi le bozze, le dai feedback. Lei impara il tuo modo di lavorare. Se non ti convince, smetti senza domande.</p>
       </div>
       <div class="how-step">
         <div class="how-num">3</div>
-        <h3>Tu approvi, lei esegue</h3>
-        <p>Da quel momento è autonoma per le cose ripetitive. Per le decisioni importanti ti notifica e tu hai sempre l'ultima parola.</p>
+        <h3>Da settimana 3, in autonomia</h3>
+        <p>Risponde, prenota, ricorda. Per le decisioni importanti ti notifica nell'app. Tu hai sempre l'ultima parola sulle cose pubbliche.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====================== PERCHÉ CLANKSY ====================== -->
-<section class="section" id="perche">
+<!-- ====================== PERCHÉ + infografica differenziazione ====================== -->
+<section class="section section-tinted" id="perche">
   <div class="wrap">
     <div class="section-header">
       <div class="section-eyebrow">La differenza</div>
-      <h2 class="section-title">Non un altro chatbot. Un cervello operativo per il tuo salone.</h2>
-      <p class="section-sub">I tool che esistono fanno una cosa sola. Clanksy è l'unica che mette insieme tutti i pezzi.</p>
+      <h2 class="section-title">Non un altro chatbot. Un cervello che vede tutto.</h2>
+      <p class="section-sub">
+        Gli altri tool fanno una cosa sola. Tu finisci a coordinarne tre o quattro che
+        non si parlano. Clanksy è una sola intelligenza che vede WhatsApp, prenotazioni,
+        Instagram e recensioni allo stesso tempo. Per questo le sue offerte funzionano:
+        sono basate sui dati reali del tuo salone.
+      </p>
     </div>
-    <div class="why-grid">
+
+    <!-- Infografica 3 — Differenziazione data integrata -->
+    <svg class="infographic infographic-wide" viewBox="0 0 880 380" role="img" aria-labelledby="info3-title info3-desc" xmlns="http://www.w3.org/2000/svg">
+      <title id="info3-title">Differenziazione Clanksy vs tool single-feature</title>
+      <desc id="info3-desc">A sinistra tre tool separati che non si parlano. A destra Clanksy come singolo cervello che vede tutti i canali contemporaneamente.</desc>
+
+      <!-- Header labels -->
+      <text x="220" y="35" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#6b5f54" letter-spacing="1.5">CON ALTRI TOOL</text>
+      <text x="660" y="35" text-anchor="middle" font-family="system-ui" font-size="14" font-weight="700" fill="#4a5d4f" letter-spacing="1.5">CON CLANKSY</text>
+
+      <!-- LEFT: 3 separate tools, no connection -->
+      <g transform="translate(80, 75)">
+        <rect width="280" height="80" rx="10" fill="#fbf8f1" stroke="#d8cfc1"/>
+        <text x="20" y="32" font-family="system-ui" font-size="13" fill="#2a2520" font-weight="600">Chatbot WhatsApp</text>
+        <text x="20" y="55" font-family="system-ui" font-size="11" fill="#6b5f54">Risponde ma non conosce le preferenze</text>
+        <circle cx="252" cy="40" r="14" fill="#e2e8df"/>
+        <text x="252" y="45" text-anchor="middle" font-family="system-ui" font-size="14">💬</text>
+      </g>
+
+      <g transform="translate(80, 175)">
+        <rect width="280" height="80" rx="10" fill="#fbf8f1" stroke="#d8cfc1"/>
+        <text x="20" y="32" font-family="system-ui" font-size="13" fill="#2a2520" font-weight="600">Tool post Instagram</text>
+        <text x="20" y="55" font-family="system-ui" font-size="11" fill="#6b5f54">Genera contenuti generici, non sa cosa vendi</text>
+        <circle cx="252" cy="40" r="14" fill="#f0e3c9"/>
+        <text x="252" y="45" text-anchor="middle" font-family="system-ui" font-size="14">📸</text>
+      </g>
+
+      <g transform="translate(80, 275)">
+        <rect width="280" height="80" rx="10" fill="#fbf8f1" stroke="#d8cfc1"/>
+        <text x="20" y="32" font-family="system-ui" font-size="13" fill="#2a2520" font-weight="600">CRM clienti</text>
+        <text x="20" y="55" font-family="system-ui" font-size="11" fill="#6b5f54">Sa le info, ma non comunica con gli altri</text>
+        <circle cx="252" cy="40" r="14" fill="#e2e8df"/>
+        <text x="252" y="45" text-anchor="middle" font-family="system-ui" font-size="14">📇</text>
+      </g>
+
+      <!-- Lines indicating NO connection (X mark) -->
+      <g stroke="#b56575" stroke-width="2" opacity="0.6">
+        <line x1="200" y1="160" x2="200" y2="175"/>
+        <line x1="195" y1="167" x2="205" y2="168"/>
+      </g>
+      <g stroke="#b56575" stroke-width="2" opacity="0.6">
+        <line x1="200" y1="260" x2="200" y2="275"/>
+        <line x1="195" y1="267" x2="205" y2="268"/>
+      </g>
+
+      <!-- DIVIDER -->
+      <line x1="440" y1="65" x2="440" y2="350" stroke="#d8cfc1" stroke-width="1" stroke-dasharray="4 4"/>
+
+      <!-- RIGHT: single brain, all connected -->
+      <g transform="translate(660, 200)">
+        <!-- Central brain -->
+        <circle r="55" fill="#4a5d4f"/>
+        <text y="-2" text-anchor="middle" font-family="system-ui" font-size="13" fill="#f6f1e8" font-weight="700">Clanksy</text>
+        <text y="14" text-anchor="middle" font-family="system-ui" font-size="11" fill="#d4dcd5">stesso cervello</text>
+        <text y="28" text-anchor="middle" font-family="system-ui" font-size="11" fill="#d4dcd5">vede tutto</text>
+      </g>
+
+      <!-- 4 input channels feeding brain -->
+      <g font-family="system-ui" font-size="11" fill="#2a2520">
+        <g transform="translate(540, 95)">
+          <circle r="28" fill="#fbf8f1" stroke="#7a8d7e" stroke-width="1.5"/>
+          <text y="5" text-anchor="middle" font-size="18">💬</text>
+        </g>
+        <text x="540" y="135" text-anchor="middle" font-size="10" fill="#6b5f54">WhatsApp</text>
+
+        <g transform="translate(780, 95)">
+          <circle r="28" fill="#fbf8f1" stroke="#7a8d7e" stroke-width="1.5"/>
+          <text y="5" text-anchor="middle" font-size="18">📅</text>
+        </g>
+        <text x="780" y="135" text-anchor="middle" font-size="10" fill="#6b5f54">Agenda</text>
+
+        <g transform="translate(540, 305)">
+          <circle r="28" fill="#fbf8f1" stroke="#7a8d7e" stroke-width="1.5"/>
+          <text y="5" text-anchor="middle" font-size="18">📸</text>
+        </g>
+        <text x="540" y="345" text-anchor="middle" font-size="10" fill="#6b5f54">Instagram</text>
+
+        <g transform="translate(780, 305)">
+          <circle r="28" fill="#fbf8f1" stroke="#7a8d7e" stroke-width="1.5"/>
+          <text y="5" text-anchor="middle" font-size="18">⭐</text>
+        </g>
+        <text x="780" y="345" text-anchor="middle" font-size="10" fill="#6b5f54">Recensioni</text>
+      </g>
+
+      <!-- Connection lines from channels to brain -->
+      <g stroke="#7a8d7e" stroke-width="2" fill="none" opacity="0.85">
+        <line x1="565" y1="115" x2="615" y2="170"/>
+        <line x1="755" y1="115" x2="705" y2="170"/>
+        <line x1="565" y1="285" x2="615" y2="230"/>
+        <line x1="755" y1="285" x2="705" y2="230"/>
+      </g>
+    </svg>
+
+    <div class="why-grid" style="margin-top:48px;">
       <ul class="why-list">
-        <li><strong>Personalizzazione vera.</strong> Maria riceve un messaggio diverso da Sofia, perché Clanksy conosce le loro preferenze.</li>
-        <li><strong>Integrata.</strong> Lo stesso cervello su WhatsApp, telefono, Instagram, recensioni. Niente tool diversi che non si parlano.</li>
-        <li><strong>Tu sempre in controllo.</strong> Niente esce all'esterno (post, offerte, risposte recensioni) senza il tuo OK.</li>
-        <li><strong>Si fa da parte quando serve.</strong> Se la cliente chiede qualcosa di delicato, lei ti chiama subito.</li>
-        <li><strong>Italiano, spagnolo, catalano nativi.</strong> Pensata per saloni in Spagna e Italia, non tradotta dall'inglese.</li>
+        <li><strong>Una sola intelligenza, tutti i canali.</strong> Maria che ti scrive su WhatsApp è la stessa Maria delle recensioni, del CRM, del post Instagram in cui appare. Per Clanksy.</li>
+        <li><strong>Offerte basate sui dati reali.</strong> Sai chi non torna da quanto, cosa ha preso l'ultima volta, quanto ha speso. L'offerta è su misura, non generica.</li>
+        <li><strong>Marketing autentico.</strong> I post Instagram nascono dai servizi che davvero vendi, non da template generici. Logo e colori del tuo salone applicati al volo.</li>
+        <li><strong>HITL nativo.</strong> Niente esce all'esterno (post, offerte, risposte review) senza il tuo OK con un tap nell'app. Sempre.</li>
+        <li><strong>Italiano e spagnolo nativi.</strong> Pensata per saloni di Spagna e Italia, non tradotta dall'inglese.</li>
       </ul>
-      <div class="competitor-table">
-        <div class="row head">
-          <div></div>
-          <div>Altri tool</div>
-          <div>Clanksy</div>
-        </div>
-        <div class="row">
-          <div>Risponde su WhatsApp</div>
-          <div class="check">✓</div>
-          <div class="you check">✓</div>
-        </div>
-        <div class="row">
-          <div>Risponde al telefono</div>
-          <div class="nope">✕</div>
-          <div class="you check">✓</div>
-        </div>
-        <div class="row">
-          <div>Ricorda preferenze cliente</div>
-          <div class="nope">✕</div>
-          <div class="you check">✓</div>
-        </div>
-        <div class="row">
-          <div>Bozze post Instagram</div>
-          <div class="nope">✕</div>
-          <div class="you check">✓</div>
-        </div>
-        <div class="row">
-          <div>Risponde recensioni Google</div>
-          <div class="nope">✕</div>
-          <div class="you check">✓</div>
-        </div>
-        <div class="row">
-          <div>Riattiva clienti dormienti</div>
-          <div class="nope">✕</div>
-          <div class="you check">✓</div>
-        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====================== PREZZO ====================== -->
+<section class="section" id="prezzo">
+  <div class="wrap">
+    <div class="section-header">
+      <div class="section-eyebrow">Prezzo</div>
+      <h2 class="section-title">Un prezzo, tutto incluso</h2>
+      <p class="section-sub">
+        Niente moduli aggiuntivi, niente setup, niente penali. Disdici quando vuoi
+        con un tap nell'app.
+      </p>
+    </div>
+
+    <div class="pricing-card">
+      <div class="pricing-price">€99<span class="unit">/mese</span></div>
+      <div class="pricing-tagline">flat, IVA esclusa · disdici quando vuoi</div>
+      <ul class="pricing-includes">
+        <li>Receptionist WhatsApp + telefono 24/7</li>
+        <li>Memoria clienti illimitata</li>
+        <li>Bozze post Instagram + reel AI</li>
+        <li>Risposte recensioni Google</li>
+        <li>Offerte mirate e riattivazioni</li>
+        <li>App iOS + Android per il titolare</li>
+        <li>Report settimanale</li>
+        <li>Supporto in italiano via WhatsApp</li>
+      </ul>
+      <div style="margin-top:24px;">
+        <a href="#demo" class="btn btn-primary" style="display:inline-block;">Prova 14 giorni gratis</a>
       </div>
+      <p style="margin-top:14px;font-size:12px;color:var(--c-text-muted);">
+        14 giorni reali. Niente carta. Niente trucchi.
+      </p>
     </div>
   </div>
 </section>
@@ -282,8 +663,8 @@
     </div>
     <div class="faq">
       <details class="faq-item">
-        <summary>Le mie clienti capiranno che non sono io?</summary>
-        <div class="answer">Clanksy si presenta come l'assistente digitale del salone, non si spaccia per te. Il tono è quello che configuri: cordiale, professionale, caldo, come preferisci. Per le clienti è una collega del salone, non una macchina.</div>
+        <summary>Le mie clienti capiranno che non sono io a rispondere?</summary>
+        <div class="answer">Clanksy si presenta come l'assistente virtuale del salone all'inizio di ogni conversazione, una sola frase ("Sono l'assistente virtuale di [tuo salone]"). Il tono è quello che imposti tu. Per le clienti è una collega del salone, non un robot freddo.</div>
       </details>
       <details class="faq-item">
         <summary>Devo cambiare numero di telefono?</summary>
@@ -291,27 +672,31 @@
       </details>
       <details class="faq-item">
         <summary>Funziona con Treatwell o Booksy?</summary>
-        <div class="answer">Sì. Importiamo lo storico clienti e gli appuntamenti dalla piattaforma che già usi durante l'onboarding. La tua agenda esistente continua a funzionare come prima.</div>
+        <div class="answer">Sì. Importiamo lo storico clienti e gli appuntamenti dalla piattaforma che già usi durante l'onboarding. La tua agenda esistente continua a funzionare come prima. Sappiamo riconoscere prenotazioni che arrivano via Booksy/Treatwell e non duplicare i messaggi.</div>
       </details>
       <details class="faq-item">
         <summary>Cosa succede se Clanksy sbaglia qualcosa?</summary>
-        <div class="answer">Niente esce all'esterno senza il tuo OK: post Instagram, offerte, risposte alle recensioni. Per i messaggi diretti alle clienti, se Clanksy ha un dubbio ti chiama via WhatsApp prima di rispondere. Inoltre puoi correggerla a voce in qualsiasi momento ("non proporre offerte la domenica") e lei si adatta subito.</div>
+        <div class="answer">Niente esce all'esterno senza il tuo OK: post Instagram, offerte, risposte alle recensioni richiedono un tap di conferma nell'app. Per i messaggi diretti alle clienti, se Clanksy ha un dubbio ti notifica prima di rispondere. Puoi correggerla in qualsiasi momento scrivendole in chat ("non proporre offerte la domenica") e si adatta subito.</div>
       </details>
       <details class="faq-item">
-        <summary>I dati delle mie clienti sono al sicuro?</summary>
-        <div class="answer">Sì. Server in Europa, GDPR-compliant. Le conversazioni complete non vengono mai salvate: estraiamo solo le preferenze rilevanti (es. "ama il colore caldo", "viene il martedì pomeriggio") e cancellabili su richiesta della cliente. Nessun dato venduto a terzi, mai.</div>
+        <summary>I dati delle mie clienti sono al sicuro? E quelli sono in regola con GDPR?</summary>
+        <div class="answer">Sì. Database in Olanda (Amsterdam, UE), GDPR-compliant. Firmiamo con te un DPA (Data Processing Agreement) prima di partire. Le conversazioni complete non vengono mai salvate: estraiamo solo le preferenze rilevanti ("ama il colore caldo", "viene il martedì pomeriggio") e cancellabili su richiesta della cliente. Nessun dato venduto a terzi.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Pubblica direttamente sui miei social?</summary>
+        <div class="answer">Sì, ma solo dopo il tuo tap di conferma nell'app. Colleghi Instagram all'inizio (un solo passaggio guidato di login Facebook). Da quel momento Clanksy può pubblicare il post che hai appena approvato direttamente sul tuo account, senza dover passare da Meta Business Suite.</div>
       </details>
       <details class="faq-item">
         <summary>Quanto tempo serve per impararlo?</summary>
-        <div class="answer">Il setup iniziale è 30 minuti, lo facciamo insieme. Le prime due settimane sono di adattamento (approvi le bozze, dai feedback). Dalla terza settimana è autonoma. Tu controlli dalla dashboard sul telefono, due tap.</div>
+        <div class="answer">Il setup iniziale è 30 minuti, lo facciamo insieme via WhatsApp. Le prime due settimane sono di adattamento (approvi le bozze, dai feedback). Dalla terza settimana è autonoma. Tu controlli tutto dall'app sul telefono, due tap.</div>
       </details>
       <details class="faq-item">
-        <summary>Posso disattivarla quando voglio?</summary>
-        <div class="answer">Sì, in qualsiasi momento. Anche solo una funzione (es. spegnere le offerte automatiche tenendo la receptionist) o tutto. Puoi farlo dalla dashboard o parlandole direttamente.</div>
+        <summary>Posso disattivare alcune funzioni?</summary>
+        <div class="answer">Sì, in qualsiasi momento, dall'app. Puoi spegnere singole funzioni (es. solo le offerte, tenendo la receptionist) o tutto. La receptionist core resta sempre attiva per non perdere prenotazioni.</div>
       </details>
       <details class="faq-item">
-        <summary>Quanto costa?</summary>
-        <div class="answer">Stiamo definendo il prezzo finale. Per ora siamo in fase pilot con un numero ristretto di saloni: contattaci per parlarne, ti diamo accesso e poi decidiamo insieme se ha senso continuare.</div>
+        <summary>Davvero €99/mese tutto incluso?</summary>
+        <div class="answer">Sì. Niente setup, niente moduli aggiuntivi, niente fee a messaggio. L'unica cosa non inclusa è il costo dei messaggi WhatsApp Business iniziati da noi (template di reattivazione/promo) che Meta fa pagare a tariffe pubbliche: di solito 0.04€-0.08€ per messaggio inviato, e tu decidi quanti inviare con un tap di conferma.</div>
       </details>
     </div>
   </div>
@@ -322,8 +707,8 @@
   <div class="wrap">
     <div class="section-header" style="margin-bottom:0;">
       <div class="section-eyebrow">Provala gratis</div>
-      <h2 class="section-title">Prenota una demo di 15 minuti</h2>
-      <p class="section-sub">Ti facciamo vedere come funziona, capiamo se è giusta per il tuo salone, partiamo se ti convince.</p>
+      <h2 class="section-title">Inizia con 14 giorni di prova</h2>
+      <p class="section-sub">14 giorni reali con tutte le funzioni. Niente carta richiesta. Se ti convince, €99/mese. Se non ti convince, smetti senza domande.</p>
     </div>
 
     <form class="form-card" id="demo-form" onsubmit="return submitDemo(event)">
@@ -339,11 +724,11 @@
       </div>
       <div class="form-row">
         <label for="f-citta">Città</label>
-        <input type="text" id="f-citta" name="citta" required placeholder="Es. Palermo o Valencia">
+        <input type="text" id="f-citta" name="citta" required placeholder="Es. Valencia o Palermo">
       </div>
       <div class="form-row">
         <label for="f-telefono">WhatsApp o telefono</label>
-        <input type="tel" id="f-telefono" name="telefono" required placeholder="+39 333 1234567">
+        <input type="tel" id="f-telefono" name="telefono" required placeholder="+34 611 234 567">
       </div>
       <div class="form-row">
         <label for="f-quando">Quando vorresti la demo?</label>
@@ -354,7 +739,7 @@
           <option value="prossima">La prossima settimana</option>
         </select>
       </div>
-      <button type="submit" class="btn btn-primary">Prenota demo</button>
+      <button type="submit" class="btn btn-primary">Prenota demo gratuita</button>
       <div class="form-success" id="form-ok">
         Grazie! Ti contattiamo a breve sul numero che hai indicato.
       </div>
@@ -375,15 +760,16 @@
         <span class="logo-mark" style="width:24px;height:24px;font-size:12px;">C</span>
         <span>Clanksy</span>
       </div>
-      <div style="margin-top:8px;font-size:12px;">L'assistente digitale per saloni beauty.</div>
+      <div style="margin-top:8px;font-size:12px;">Il cervello operativo del tuo salone.</div>
     </div>
     <div style="display:flex;gap:24px;flex-wrap:wrap;">
       <a href="mailto:hello@clanksy.ai">hello@clanksy.ai</a>
       <a href="#cosa-fa">Cosa fa</a>
+      <a href="#prezzo">Prezzo</a>
       <a href="#faq">FAQ</a>
       <a href="/privacy">Privacy</a>
     </div>
-    <div>© 2026 Clanksy</div>
+    <div>© 2026 Clanksy · Valencia, Spagna</div>
   </div>
 </footer>
 

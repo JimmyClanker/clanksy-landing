@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy app Clanksy</title>
+<meta name="description" content="Privacy policy dell'app mobile Clanksy. Come trattiamo i dati raccolti tramite l'app per saloni beauty.">
+<link rel="alternate" hreflang="it" href="https://clanksy.ai/privacy-app">
+<link rel="alternate" hreflang="es" href="https://clanksy.ai/privacy-app#es">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%234a5d4f'/%3E%3Ctext x='50' y='68' text-anchor='middle' fill='%23f6f1e8' font-family='system-ui' font-size='62' font-weight='800'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css?v=20260509-mobile2">
+<style>
+  .lang-anchors {
+    display: flex;
+    gap: 16px;
+    margin: 16px 0 32px 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e6e0d0;
+  }
+  .lang-anchors a {
+    color: #4a5d4f;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+  }
+  .lang-anchors a:hover {
+    border-bottom-color: #4a5d4f;
+  }
+  .section-title {
+    font-size: 1.3rem;
+    color: #2d4030;
+    margin: 32px 0 8px 0;
+  }
+  .privacy-list dt {
+    font-weight: 600;
+    color: #2d4030;
+    margin-top: 16px;
+  }
+  .privacy-list dd {
+    margin: 4px 0 12px 0;
+    color: #5a5a5a;
+    line-height: 1.6;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="logo">
+      <span class="logo-mark">C</span>
+      <span>Clanksy</span>
+    </a>
+    <div class="lang-switch">
+      <a href="#it" class="active">IT</a>
+      <a href="#es">ES</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="wrap legal-copy">
+
+    <div class="lang-anchors">
+      <a href="#it">Italiano</a>
+      <a href="#es">Español</a>
+    </div>
+
+    <!-- ============== ITALIANO ============== -->
+    <section id="it">
+      <p class="eyebrow">Privacy app</p>
+      <h1>Privacy policy app Clanksy</h1>
+      <p class="hero-sub">
+        Questa pagina descrive come Clanksy tratta i dati raccolti tramite l'app mobile
+        (Clanksy per il titolare del salone, Clanksy Control per amministrazione interna).
+        Ultima revisione: 13 maggio 2026.
+      </p>
+
+      <h2 class="section-title">Titolare del trattamento</h2>
+      <p>
+        Andrea Emanuele, founder del progetto Clanksy. Contatto:
+        <a href="mailto:info@clanksy.ai">info@clanksy.ai</a>.
+        Sede operativa: Valencia, Spagna.
+      </p>
+
+      <h2 class="section-title">Dati raccolti tramite l'app</h2>
+      <dl class="privacy-list">
+        <dt>Numero di telefono (E.164)</dt>
+        <dd>
+          Raccolto durante l'autenticazione magic link via WhatsApp.
+          Usato per identificare il titolare del salone e collegarlo al suo business.
+          Conservato finché l'account è attivo. Cancellabile su richiesta.
+        </dd>
+
+        <dt>Identificativo dispositivo + push token</dt>
+        <dd>
+          Generato automaticamente dal sistema operativo. Usato per inviare notifiche push
+          alle approvazioni HITL (recensioni, post Instagram, offerte) e agli alert operativi.
+          Cancellato automaticamente alla disinstallazione dell'app o al revoke push permissions.
+        </dd>
+
+        <dt>Contenuto dei messaggi WhatsApp clienti</dt>
+        <dd>
+          I messaggi inviati e ricevuti dai clienti finali del salone tramite il sistema Clanksy
+          vengono archiviati nel database interno per: (1) gestire la conversazione, (2) generare
+          report al titolare, (3) addestrare il modello di linguaggio sui pattern conversazionali
+          del salone (in modalità "soft tuning", senza esfiltrazione esterna).
+        </dd>
+
+        <dt>Chiamate vocali (se Vapi receptionist attivo)</dt>
+        <dd>
+          <strong>NON registriamo l'audio della chiamata.</strong> Il transcript viene
+          processato runtime per estrarre informazioni utili al servizio (preferenze cliente,
+          richieste di prenotazione), quindi <strong>il transcript completo viene cancellato
+          entro 4 ore dalla chiamata</strong>. Conserviamo solo: summary AI condensato
+          (50-200 caratteri), outcome (es. "prenotato", "escalato a manager", "info"),
+          durata chiamata, numero chiamante. Niente audio, niente trascrizione testuale
+          permanente.
+        </dd>
+
+        <dt>Prenotazioni, clienti, recensioni</dt>
+        <dd>
+          Dati operativi del salone (nome cliente, telefono, servizi prenotati, recensioni
+          ricevute) sincronizzati via email forwarding Booksy/Treatwell/Fresha o inseriti
+          tramite l'app. Conservati per la durata dell'abbonamento.
+        </dd>
+
+        <dt>Dati di utilizzo dell'app (analytics interno)</dt>
+        <dd>
+          Eventi di interazione (quali tab apri, quali approvazioni fai, costi LLM per turno).
+          Usati per migliorare il prodotto. Niente terze parti analytics tipo Google Analytics
+          o Mixpanel.
+        </dd>
+      </dl>
+
+      <h2 class="section-title">Per cosa usiamo i dati</h2>
+      <ul>
+        <li>Far funzionare il servizio (rispondere ai clienti, gestire prenotazioni)</li>
+        <li>Inviare al titolare notifiche operative e report settimanali</li>
+        <li>Migliorare la qualità delle risposte AI sui pattern specifici del salone</li>
+        <li>Calcolare i costi LLM per fatturazione mensile e ottimizzazione cache</li>
+      </ul>
+
+      <h2 class="section-title">Cosa NON facciamo</h2>
+      <ul>
+        <li><strong>Non vendiamo</strong> i dati a terze parti</li>
+        <li><strong>Non condividiamo</strong> con piattaforme pubblicitarie</li>
+        <li><strong>Non usiamo i dati clienti del salone per training pubblico</strong>
+            dei modelli AI (Anthropic API è configurata in modalità no-training)</li>
+        <li>Non tracciamo l'utente tra app diverse (no AppTrackingTransparency framework attivo)</li>
+        <li>Non raccogliamo informazioni di pagamento nell'app (subscription esterna via web)</li>
+      </ul>
+
+      <h2 class="section-title">Provider tecnici</h2>
+      <p>
+        I dati sono processati tramite questi provider, con accesso limitato al necessario:
+      </p>
+      <ul>
+        <li><strong>Anthropic API (Claude AI)</strong> — elaborazione linguaggio naturale,
+            sede USA. Dati passati solo nella request, no training, no archive lato Anthropic.</li>
+        <li><strong>WhatsApp Cloud API (Meta)</strong> — routing messaggi. Meta vede solo
+            i messaggi che transitano per il loro servizio (regole loro).</li>
+        <li><strong>Railway (region Amsterdam, Paesi Bassi, UE)</strong> — hosting database
+            PostgreSQL + orchestrazione workflow n8n + Guardian service. Tutti i dati
+            applicativi sono in UE (region <code>europe-west4</code>). Dati at-rest
+            crittografati. Backup giornaliero.</li>
+        <li><strong>Voyage AI</strong> — embeddings semantici (solo se attivo opt-in).</li>
+        <li><strong>Google Business Profile API</strong> — pubblicazione risposte recensioni
+            (solo se attivo).</li>
+        <li><strong>Vapi</strong> — receptionist vocale (solo se attivo).</li>
+        <li><strong>Predis.ai</strong> — generazione immagini, video e reel branded per
+            post Instagram. Sede India. Riceve solo: prompt testuale generato dall'AI,
+            URL pubblico del logo del salone (hostato su nostra CDN), colori brand.
+            <strong>NON riceve dati di clienti finali del salone.</strong></li>
+        <li><strong>Cloudflare R2</strong> — storage media generati e logo brand
+            (URL pubblici stabili, solo asset di marketing, no PII).</li>
+      </ul>
+
+      <h2 class="section-title">Trasferimenti extra-UE</h2>
+      <p>
+        Anthropic, Voyage, Vapi, Mailgun, Cloudflare e Google sono basati negli USA;
+        Predis.ai ha sede in India. Il trasferimento avviene sotto le Standard Contractual
+        Clauses (SCC) approvate dalla Commissione UE (Decisione 2021/914). Railway ospita
+        database e workflow esclusivamente in region <code>europe-west4</code> Amsterdam, UE.
+        Per dubbi specifici scrivi a <a href="mailto:info@clanksy.ai">info@clanksy.ai</a>.
+      </p>
+
+      <h2 class="section-title">Conservazione</h2>
+      <p>
+        Mantenamo i dati operativi del salone (clienti, prenotazioni, conversazioni) per
+        l'intera durata dell'abbonamento. Dopo la cancellazione dell'account, manteniamo i dati
+        in modalità "cold storage" per 30 giorni per consentire ripristino in caso di errore,
+        poi cancellazione definitiva.
+      </p>
+      <p>
+        Per dati specifici dei clienti finali del salone (es. cliente che chiede "cancellatemi"
+        via WhatsApp con keyword STOP): cancellazione immediata + opt-out permanente.
+      </p>
+
+      <h2 class="section-title">Diritti dell'utente</h2>
+      <p>
+        Hai diritto a: accesso, rettifica, cancellazione, limitazione, portabilità, opposizione.
+        Puoi anche revocare il consenso quando il trattamento si basa su consenso.
+      </p>
+      <p>
+        Per esercitare i diritti scrivici a <a href="mailto:info@clanksy.ai">info@clanksy.ai</a>.
+        Per reclami, puoi rivolgerti al Garante della Privacy italiano
+        (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>) o all'AEPD spagnola
+        (<a href="https://www.aepd.es">aepd.es</a>).
+      </p>
+
+      <h2 class="section-title">Sicurezza</h2>
+      <ul>
+        <li>Comunicazione cifrata TLS 1.3 tra app e server</li>
+        <li>HMAC verification su tutti i webhook inbound (Meta + Mailgun)</li>
+        <li>Token autenticazione hashati SHA-256 a riposo</li>
+        <li>Postgres at-rest encryption Railway default (Amsterdam, UE)</li>
+        <li>Backup giornalieri criptati, retention 30 giorni</li>
+        <li>Accesso ai dati limitato al founder, ogni accesso loggato in audit log</li>
+      </ul>
+
+      <h2 class="section-title">Decisioni automatizzate</h2>
+      <p>
+        L'app usa intelligenza artificiale per: (1) classificare l'intent dei messaggi clienti,
+        (2) generare bozze di risposta, (3) proporre azioni operative (recall, offerte).
+        Tutte le decisioni con impatto sul cliente finale richiedono <strong>conferma esplicita</strong>
+        del titolare del salone via app (modalità HITL — Human In The Loop).
+        Niente decisione automatica viene applicata senza supervisione umana per azioni
+        visibili al cliente finale (recensioni, post IG, offerte WhatsApp marketing).
+      </p>
+
+      <h2 class="section-title">Età minima</h2>
+      <p>
+        L'app è destinata a titolari di saloni beauty maggiorenni. Non raccogliamo
+        intenzionalmente dati da minori. Se ritieni che un minore abbia fornito dati per errore,
+        scrivici e cancelleremo immediatamente.
+      </p>
+
+      <h2 class="section-title">Aggiornamenti</h2>
+      <p>
+        Se cambiamo materialmente come trattiamo i dati, aggiorneremo questa pagina e ti
+        notificheremo via app o WhatsApp prima dell'entrata in vigore. Cambi minori
+        (linguistici, refinements) sono pubblicati senza notifica.
+      </p>
+    </section>
+
+    <!-- ============== ESPAÑOL ============== -->
+    <section id="es" style="margin-top: 80px; padding-top: 40px; border-top: 2px solid #e6e0d0;">
+      <p class="eyebrow">Privacidad app</p>
+      <h1>Politica de privacidad app Clanksy</h1>
+      <p class="hero-sub">
+        Esta pagina describe como Clanksy trata los datos recogidos a traves de la app movil
+        (Clanksy para el propietario del salon, Clanksy Control para administracion interna).
+        Ultima revision: 13 de mayo de 2026.
+      </p>
+
+      <h2 class="section-title">Responsable del tratamiento</h2>
+      <p>
+        Andrea Emanuele, founder del proyecto Clanksy. Contacto:
+        <a href="mailto:info@clanksy.ai">info@clanksy.ai</a>.
+        Sede operativa: Valencia, Espana.
+      </p>
+
+      <h2 class="section-title">Datos recogidos a traves de la app</h2>
+      <dl class="privacy-list">
+        <dt>Numero de telefono (E.164)</dt>
+        <dd>
+          Recogido durante la autenticacion magic link via WhatsApp.
+          Usado para identificar al propietario del salon y conectarlo a su negocio.
+          Conservado mientras la cuenta esta activa. Cancelable bajo solicitud.
+        </dd>
+
+        <dt>Identificador dispositivo + push token</dt>
+        <dd>
+          Generado automaticamente por el sistema operativo. Usado para enviar notificaciones
+          push sobre aprobaciones HITL (resenas, posts Instagram, ofertas) y alertas operativas.
+          Cancelado automaticamente al desinstalar la app o al revocar permisos push.
+        </dd>
+
+        <dt>Contenido mensajes WhatsApp clientes</dt>
+        <dd>
+          Los mensajes enviados y recibidos por los clientes finales del salon a traves del
+          sistema Clanksy se archivan en la base de datos interna para: (1) gestionar la
+          conversacion, (2) generar informes al propietario, (3) ajustar el modelo de
+          lenguaje sobre patrones del salon (modalidad "soft tuning", sin exportacion externa).
+        </dd>
+
+        <dt>Reservas, clientes, resenas</dt>
+        <dd>
+          Datos operativos del salon (nombre cliente, telefono, servicios reservados, resenas
+          recibidas) sincronizados via email forwarding Booksy/Treatwell/Fresha o introducidos
+          a traves de la app. Conservados durante la suscripcion.
+        </dd>
+
+        <dt>Datos de uso de la app (analytics interno)</dt>
+        <dd>
+          Eventos de interaccion (que pestanas abres, que aprobaciones haces, costes LLM por
+          turno). Usados para mejorar el producto. Sin terceros analytics tipo Google Analytics
+          o Mixpanel.
+        </dd>
+      </dl>
+
+      <h2 class="section-title">Para que usamos los datos</h2>
+      <ul>
+        <li>Hacer funcionar el servicio (responder a clientes, gestionar reservas)</li>
+        <li>Enviar al propietario notificaciones operativas e informes semanales</li>
+        <li>Mejorar la calidad de las respuestas AI sobre patrones del salon</li>
+        <li>Calcular costes LLM para facturacion mensual y optimizacion cache</li>
+      </ul>
+
+      <h2 class="section-title">Lo que NO hacemos</h2>
+      <ul>
+        <li><strong>No vendemos</strong> los datos a terceros</li>
+        <li><strong>No compartimos</strong> con plataformas publicitarias</li>
+        <li><strong>No usamos los datos clientes del salon para training publico</strong>
+            de los modelos AI</li>
+        <li>No rastreamos al usuario entre apps (no AppTrackingTransparency activo)</li>
+        <li>No recogemos informacion de pago en la app (suscripcion externa via web)</li>
+      </ul>
+
+      <h2 class="section-title">Derechos del usuario</h2>
+      <p>
+        Tienes derecho a: acceso, rectificacion, cancelacion, limitacion, portabilidad,
+        oposicion. Para ejercerlos escribenos a
+        <a href="mailto:info@clanksy.ai">info@clanksy.ai</a>.
+        Para reclamaciones puedes dirigirte a la
+        <a href="https://www.aepd.es">AEPD (Agencia Espanola de Proteccion de Datos)</a>.
+      </p>
+
+      <h2 class="section-title">Decisiones automatizadas</h2>
+      <p>
+        La app usa inteligencia artificial para clasificar mensajes, generar borradores de
+        respuesta y proponer acciones. Toda decision con impacto sobre el cliente final
+        requiere <strong>confirmacion explicita</strong> del propietario a traves de la app
+        (modalidad HITL).
+      </p>
+
+      <p style="margin-top: 24px; color: #8a8a8a; font-size: 0.9rem;">
+        Version completa en italiano: <a href="#it">arriba</a>.
+        Esta politica se actualizara cuando cambien materialmente nuestras practicas.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="logo" style="font-size:16px;">
+        <span class="logo-mark" style="width:24px;height:24px;font-size:12px;">C</span>
+        <span>Clanksy</span>
+      </div>
+      <div style="margin-top:8px;font-size:12px;">AI workflow automation per saloni beauty.</div>
+    </div>
+    <div style="display:flex;gap:24px;flex-wrap:wrap;">
+      <a href="mailto:info@clanksy.ai">info@clanksy.ai</a>
+      <a href="/">Home</a>
+      <a href="/privacy">Privacy lead form</a>
+    </div>
+    <div>© 2026 Clanksy</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,15 +1,27 @@
 # Deploy clanksy.ai — istruzioni
 
-Ultimo deploy verificato da Codex: 2026-05-09, Cloudflare Pages project
-`clanksy-landing`, branch `main`, preview
-`https://b73a457e.clanksy-landing.pages.dev`.
+Ultimo stato verificato da Codex: 2026-05-10. Il dominio pubblico è in
+fallback temporaneo su GitHub Pages repository `JimmyClanker/clanksy-landing`,
+con HTTPS attivo. Cloudflare gestisce ancora il DNS, ma Cloudflare Pages è
+bypassato perché `clanksy-landing.pages.dev` andava in timeout.
+
+Stato live atteso durante il fallback:
+- `https://clanksy.ai/` risponde da GitHub Pages.
+- `http://clanksy.ai/` redirige a `https://clanksy.ai/`.
+- GitHub Pages ha certificato approvato per `clanksy.ai` e `www.clanksy.ai`;
+  `Enforce HTTPS` è attivo.
+- Il form demo usa di default `https://api.clanksy.ai/webhook/landing-demo-request`.
+  Al 2026-05-10 punta al tunnel nominato Cloudflare verso n8n locale.
 
 Il token locale in `.env` ha permesso Pages deploy al 2026-05-09. Non stampare
 mai il valore del token e non committare `.env` o copie tipo `.env.save`.
 
-## Opzione A — Cloudflare Pages (raccomandata)
+## Opzione A — Cloudflare Pages
 
 Tutto su Cloudflare: niente terzi, dominio già gestito da loro, deploy istantaneo.
+Al 2026-05-09 è stata disattivata come strada live perché il project Pages
+timeoutava anche dopo rollback statico. Prima di riusarla, testare su staging
+o preview senza spostare DNS production.
 
 ### 1. API token richiesto
 
@@ -72,7 +84,7 @@ Apri https://clanksy.ai — deve mostrare la landing italiana. https://clanksy.a
 
 ## Opzione B — GitHub Pages + Cloudflare DNS
 
-Se preferisci un repo GitHub dedicato.
+Fallback attualmente usato in produzione.
 
 ### 1. Crea repo GitHub
 
@@ -99,10 +111,12 @@ Settings repo → Pages → Source: `main` branch / root → Save.
 ### 4. DNS Cloudflare
 
 Apri dashboard CF → clanksy.ai → DNS → aggiungi:
-- `CNAME` `clanksy.ai` → `jimmyclanker.github.io` (proxied OFF inizialmente, poi ON dopo verifica)
-- `CNAME` `www` → `jimmyclanker.github.io`
+- record apex `A` DNS-only verso gli IP GitHub Pages:
+  `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+- `CNAME` `www` → `jimmyclanker.github.io` DNS-only
 
-GitHub auto-emette certificato (~10 min).
+GitHub auto-emette il certificato. Non attivare `Enforce HTTPS` finché
+l'API GitHub Pages non mostra un certificato disponibile.
 
 ---
 
@@ -138,7 +152,48 @@ con CNAME proxied a `trycloudflare.com`: Cloudflare risponde con errore 1014
 cross-user CNAME. Per il dev live temporaneo usa `landing/config.js`; per la
 produzione usare VPS/Caddy o Cloudflare Tunnel nominato con hostname custom.
 
-Il workflow n8n `41_landing_demo_request` è da creare. Stub veloce: webhook POST → INSERT in nuova tabella `demo_requests` → notifica Andrea via WhatsApp.
+### Stato attuale `api.clanksy.ai`
+
+Al 2026-05-10 `api.clanksy.ai` e' operativo come Cloudflare Tunnel nominato
+verso n8n locale:
+
+```text
+api.clanksy.ai -> <tunnel_id>.cfargotunnel.com -> http://127.0.0.1:5678
+```
+
+Sul Mac di sviluppo il token e' locale/non versionato:
+
+```text
+.env -> CLOUDFLARE_TUNNEL_TOKEN
+~/Library/Application Support/Clanksy/cloudflare_tunnel_token
+```
+
+Il tunnel e' tenuto vivo dal LaunchAgent utente:
+
+```bash
+launchctl print "gui/$(id -u)/com.clanksy.api-tunnel"
+```
+
+Nota sicurezza: non avviare `cloudflared` con `--token <valore>` in command
+line, perche' il token compare in `ps`. Usare la variabile env `TUNNEL_TOKEN`
+o il LaunchAgent locale.
+
+Il workflow n8n `41_landing_demo_request` esiste e inserisce in `demo_requests`.
+Per produzione stabile, configurare `api.clanksy.ai` su VPS/Caddy:
+
+```env
+N8N_HOST=api.clanksy.ai
+PUBLIC_HOSTS=api.clanksy.ai
+```
+
+Poi creare record DNS `A api.clanksy.ai -> <IP_VPS>` e verificare:
+
+```bash
+curl -i https://api.clanksy.ai/webhook/landing-demo-request
+```
+
+Una risposta `404`/method-not-allowed su GET è accettabile per smoke test;
+il POST del form va testato con payload controllato.
 
 ## Asset mancanti (TODO)
 
