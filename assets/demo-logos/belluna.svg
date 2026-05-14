@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <rect width="800" height="800" fill="#f9eee1"/>
+  <g transform="translate(400,400)" text-anchor="middle">
+    <g transform="translate(0,-90)" stroke="#8d5b3b" fill="none" stroke-width="1.5">
+      <path d="M -30 10 Q 0 -25 30 10 Q 0 30 -30 10 Z"/>
+      <circle r="2.5" fill="#c89a8a" stroke="none"/>
+    </g>
+    <text y="10" font-size="78" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-weight="500" fill="#8d5b3b" letter-spacing="-1">Casa Belluna</text>
+    <line x1="-80" y1="50" x2="80" y2="50" stroke="#c89a8a" stroke-width="1"/>
+    <text y="100" font-size="18" font-family="Helvetica, Arial, sans-serif" letter-spacing="10" fill="#c89a8a">SEVILLA</text>
+    <text y="148" font-size="13" font-family="Helvetica, Arial, sans-serif" letter-spacing="5" fill="#a98875">UÑAS · BELLEZA</text>
+  </g>
+</svg>
